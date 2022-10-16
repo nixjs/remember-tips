@@ -42,3 +42,15 @@ export abstract class WebStorage {
         }
     }
 }
+
+
+
+export class SessionStorage extends WebStorage {
+    protected readonly store = window.sessionStorage
+}
+
+
+export class LocalStorage extends WebStorage {
+    protected readonly store = window.localStorage
+}
+
